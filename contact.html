@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WonderMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/5.13.0/simple-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo-icon">
+            <h1 class="logo">WonderMart</h1>
+            <div class="icon">&#9776;</div> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="members.html">Members</a></li> 
+                <li><a href="cart.html">Cart</a></li> 
+            </ul>
+        </nav>
+    </div>
+</header>
+    <br> <br>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>You can reach us via email or follow us on social media for updates:</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:info@wondermart.com">info@wondermart.com</a></p>
+                <p>Social Media:</p>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/WonderMart" target="_blank"><span class="iconify" data-icon="simple-icons:facebook" data-inline="false"></span></a></li>
+                    <li><a href="https://twitter.com/WonderMart" target="_blank"><span class="iconify" data-icon="simple-icons:twitter" data-inline="false"></span></a></li>
+                    <li><a href="https://www.instagram.com/WonderMart/" target="_blank"><span class="iconify" data-icon="simple-icons:instagram" data-inline="false"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WonderMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const icon = document.querySelector(".icon");
+            const nav = document.querySelector("nav");
+
+            icon.addEventListener("click", function() {
+                nav.classList.toggle("open");
+            });
+        });
+    </script>
+</body>
+</html>

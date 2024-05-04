@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WonderMart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo-icon">
+            <h1 class="logo">WonderMart</h1>
+            <div class="icon">&#9776;</div> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="members.html">Members</a></li> 
+                <li><a href="cart.html">Cart</a></li> 
+            </ul>
+        </nav>
+    </div>
+</header>
+    <br><br>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>WonderMart is your ultimate destination for online shopping. Based in Riyadh, Saudi Arabia, we offer a wide range of products, including electronics, fashion, home goods, and more, to cater to all your needs.</p>
+            <p>At WonderMart, our mission is to provide you with the best shopping experience possible. We are committed to offering high-quality products at competitive prices while ensuring excellent customer service. Your satisfaction is our top priority.</p>
+            <h3>Our Team</h3>
+            <div class="team-member">
+                <h4>Nawal Nabil Almuslimani</h4>
+                <p>Co-Founder & Chief Technology Officer</p>
+            </div>
+            <div class="team-member">
+                <h4>Raneem Abdulrahman Alhuwaiti</h4>
+                <p>Co-Founder & Chief Marketing Officer</p>
+            </div>
+            <div class="team-member">
+                <h4>Nouf Ali Albalawi</h4>
+                <p>Co-Founder & Chief Operating Officer</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WonderMart. All rights reserved.</p>
+        </div>
+    </footer>
+	  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const icon = document.querySelector(".icon");
+    const nav = document.querySelector("nav");
+
+    icon.addEventListener("click", function() {
+      nav.classList.toggle("open");
+    });
+  });
+</script>
+</body>
+</html>

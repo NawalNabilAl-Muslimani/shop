@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - WonderMart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-icon">
+                <h1 class="logo">WonderMart</h1>
+                <div class="icon">&#9776;</div> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="members.html">Members</a></li> 
+                    <li><a href="cart.html">Cart</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Description: Powerful laptop for work and entertainment. Price: $999.99</p>
+            </div>
+            <div class="product">
+                <img src="tablet.jpg" alt="Tablet">
+                <h3>Tablet</h3>
+                <p>Description: Portable tablet for productivity and entertainment. Price: $499.99</p>
+            </div>
+            <div class="product">
+                <img src="phone.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>Description: Latest smartphone with high-resolution display. Price: $699.99</p>
+            </div>
+            <div class="product">
+                <img src="gaming_console.jpg" alt="Gaming Console">
+                <h3>Gaming Console</h3>
+                <p>Description: Next-generation gaming console for immersive gaming experience. Price: $599.99</p>
+            </div>
+            <div class="product">
+                <img src="drone.jpg" alt="Drone">
+                <h3>Drone</h3>
+                <p>Description: High-performance drone for aerial photography and videography. Price: $799.99</p>
+            </div>
+            <div class="product">
+                <img src="camera.jpg" alt="Camera">
+                <h3>Camera</h3>
+                <p>Description: Professional camera for capturing memorable moments. Price: $1499.99</p>
+            </div>
+            <div class="product">
+                <img src="watch.jpg" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p>Description: Stylish smartwatch with health monitoring features. Price: $299.99</p>
+            </div>
+            <div class="product">
+                <img src="speaker.jpg" alt="Speaker">
+                <h3>Speaker</h3>
+                <p>Description: High-fidelity speaker for immersive audio experience. Price: $399.99</p>
+            </div>
+            <div class="product">
+                <img src="headphones.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Description: Wireless headphones with noise-cancellation technology. Price: $199.99</p>
+            </div>
+            <div class="product">
+                <img src="robot_vacuum.jpg" alt="Robot Vacuum">
+                <h3>Robot Vacuum</h3>
+                <p>Description: Intelligent robot vacuum for hands-free cleaning. Price: $349.99</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WonderMart. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const icon = document.querySelector(".icon");
+            const nav = document.querySelector("nav");
+
+            icon.addEventListener("click", function() {
+                nav.classList.toggle("open");
+            });
+        });
+    </script>
+</body>
+</html>

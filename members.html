@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WonderMart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo-icon">
+            <h1 class="logo">WonderMart</h1>
+            <div class="icon">&#9776;</div> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="members.html">Members</a></li> 
+                <li><a href="cart.html">Cart</a></li> 
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to OUR SHOP</h2>
+
+      <div class="container">
+       
+        
+        <h3>Our Team</h3>
+        <ul id="team-members">
+        </ul>
+
+      <div class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div id="contact-form">
+        <h3>Contact Us</h3>
+        <form action="#" method="post" onsubmit="return validateForm()">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const teamMembers = [
+        "نوال نبيل المسلماني",
+        "رنيم عبدالرحمن الحويطي",
+        "نوف علي البلوي"
+      ];
+      const teamList = document.getElementById("team-members");
+      teamMembers.sort(() => Math.random() - 0.5);
+      teamMembers.forEach(member => {
+        const listItem = document.createElement("li");
+        listItem.textContent = member;
+        teamList.appendChild(listItem);
+      });
+    });
+
+    function validateForm() {
+      const emailField = document.forms["contactForm"]["email"].value;
+      const emailPattern = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+      if (!emailPattern.test(emailField)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+    }
+  </script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 WonderMart. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const icon = document.querySelector(".icon");
+    const nav = document.querySelector("nav");
+
+    icon.addEventListener("click", function() {
+      nav.classList.toggle("open");
+    });
+  });
+</script>
+</body>
+</html>
